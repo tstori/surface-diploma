@@ -1,0 +1,9 @@
+.header {
+    height: 98vh;
+
+    background-image: url("../images/football_767.jpg");
+    background-color: #1b1837;
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
