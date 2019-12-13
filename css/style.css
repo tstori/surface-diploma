@@ -1,9 +1,42 @@
-.header {
-    height: 98vh;
+/* Main Styles*/
 
-    background-image: url("../images/football_767.jpg");
-    background-color: #1b1837;
+html {
+    box-sizing: border-box;
+    display: block;
+}
+
+body {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+/* Top container */
+
+.top_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
+}
+
+.top_container::before {
+    content: "";
+
+    background-color: #000000;
+    opacity: 0.6;
+}
+
+
+@media (max-width: 640px) {
+
+    .top_container {
+        background-image: url("../images/football_767.jpg");
+    }
+    
 }
