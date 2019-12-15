@@ -1,3 +1,28 @@
+/* Fonts */
+
+/* Regular */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold.woff') format('woff'),
+         url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
 /* Global Styles*/
 
 html {
@@ -6,22 +31,32 @@ html {
 }
 
 body {
-    box-sizing: inherit;
     margin: 0;
 
-    color: #fff;
+	font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: normal;
+    
+	color: #fff
 }
 
 /* Top container */
 
-.top_container {
-    position: relative;
-    height: 100vh;
+.container {
+    position: absolute;
+    margin: 0 20px;
+}
 
-    background-color: rgba(0, 0, 0, 0.5);
+.top_container {
+    position: fixed;
+
+    width: 100vw;
+    height: 100%;
+
+    color: #12124a;
     background-size: cover;
-    background-position: center top;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .top_container::before {
@@ -29,11 +64,37 @@ body {
 
     position: absolute;
 
-    height: inherit;
-    width: 100%;
+    width: 100vw;
+    height: 100%;
 
     background-color: #12124a;
-    opacity: 0.9;
+    opacity: 0.93;
+}
+
+.header_logo {
+    position: relative;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.logo_icon {
+    width: 40%;
+    margin-top: 5vh;
+
+    fill: #fff;
+}
+
+.header_title {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header_description {
+    margin-left: 44px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 
@@ -41,6 +102,13 @@ body {
 
     .top_container {
         background-image: url("../images/football_767.jpg");
+        background-size: 140%;
+    }
+
+    .header-title {
+        margin-top: 133px;
+
+        font-size: 28px;
     }
     
 }
