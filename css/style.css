@@ -42,11 +42,6 @@ body {
 
 /* Top container */
 
-.container {
-    position: absolute;
-    margin: 0 20px;
-}
-
 .top_container {
     position: fixed;
 
@@ -56,7 +51,7 @@ body {
     color: #12124a;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 }
 
 .top_container::before {
@@ -79,22 +74,52 @@ body {
     text-align: center;
 }
 
-.logo_icon {
-    width: 40%;
-    margin-top: 5vh;
-
-    fill: #fff;
+.header_container {
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .header_title {
+    margin: 0;
+}
+
+/* SVG */
+
+.logo_icon {
+    fill: #fff;
+}
+
+.button_icon {
+    fill: #fff;
+}
+
+.header_description {
     color: #fff;
     text-transform: uppercase;
 }
 
-.header_description {
-    margin-left: 44px;
-    color: #fff;
+/* Button */
+
+.store_submit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: inherit;
     text-transform: uppercase;
+    background-color: #5e42b0;
+    color: #fff;
+    border-style: none;
+}
+
+.store_header {
+    width: 100%;
+}
+
+.store_subtitle {
+    width: 100%;
+    font-weight: bold;
 }
 
 
@@ -102,13 +127,37 @@ body {
 
     .top_container {
         background-image: url("../images/football_767.jpg");
-        background-size: 140%;
     }
 
-    .header-title {
-        margin-top: 133px;
+    .logo_icon {
+        width: 133px;
+        margin-top: 5vh;
+    }
 
+    .header_container {
+        margin: 34% 20px 0;
+    }
+
+    .header_description {
+        width: 236px;
+        margin: 28px 0 0 44px;
+        margin-bottom: 0;
+    }
+
+    .header_title, .header_description {
         font-size: 28px;
     }
+
+/* Button */
+
+    .store_submit {
+        width: 280px;
+        height: 35px;
+        margin-top: 88px;
+        border-radius: 20px;
+    }
     
+    .store_header {
+        font-size: 8px;
+    }
 }
