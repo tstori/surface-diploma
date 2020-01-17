@@ -64,23 +64,31 @@ body {
 
     .top-container::before {
         content: '';
+        position: absolute;
         width: 100%;
-        height: inherit;
+        height: 100vh;
 
         background-color: rgba(24, 25, 65, 0.93);
     }
 
     .header_logo {
-        position: absolute;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+<<<<<<< HEAD
         width: 100%;
         margin-top: 33px;
         
         text-align: center;
     }
 
+=======
+>>>>>>> 8adb99d692d082fc0574919e45ca880761371735
     .logo_icon {
         width: 133px;
         height: 36px;
+        margin-top: 33px;
     }
 }
