@@ -58,6 +58,7 @@ body {
         height: 100vh;
 
         background: url(../images/football_767.jpg) no-repeat top center fixed;
+        background-color: rgba(24, 25, 65, 0.93);
         background-size: cover;
     }
 
@@ -72,6 +73,13 @@ body {
     .header_logo {
         position: absolute;
 
+        width: 100%;
+        margin-top: 33px;
+        
+        text-align: center;
+    }
+
+    .logo_icon {
         width: 133px;
         height: 36px;
     }
