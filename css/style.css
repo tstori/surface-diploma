@@ -23,7 +23,7 @@
 }
 
 
-/* Global Styles*/
+/* Global Styles */
 
 html {
     box-sizing: border-box;
@@ -64,6 +64,8 @@ button {
     /* Top Container */
 
     .top-container {
+        display: flex;
+        flex-direction: column;
         width: 100vw;
         height: 100vh;
 
@@ -74,7 +76,6 @@ button {
 
     .top-container::before {
         content: '';
-        position: absolute;
 
         width: inherit;
         height: inherit;
@@ -83,29 +84,34 @@ button {
     }
 
     .header_logo {
-        position: relative;
+        position: absolute;
 
-        width: 100%;
+        width: inherit;
 
         text-align: center;
     }
 
     .logo_icon {
-        width: 133px;
+        width: 42%;
         height: 36px;
         margin-top: 33px;
     }
 
-    .header_container {
-        position: relative;
+    .main-container {
+        position: absolute;
 
-        margin-left: 20px;
-        margin-right: 20px;
+        width: 87.5%;
+
+        margin-left: 6.25%;
+        margin-right: 6.25%;
+    }
+
+    .top-container .main-container {
         margin-top: 135px;
     }
 
     .header_title, .header_description {
-        font-size: 28px;
+        font-size: calc( (100vw - 320px)/(640 - 320) * (30 - 28) + 28px);
     }
 
     .header_title {
@@ -151,6 +157,8 @@ button {
 
     .topic-text, .description-text {
         margin: 0;
+        
+        font-size: calc( (100vw - 320px)/(640 - 320) * (12 - 8) + 8px);
     }
 
     .topic-text {
@@ -162,8 +170,40 @@ button {
 
         float: left;
 
-        width: 24px;
+        width: calc( (100vw - 320px)/(640 - 320) * (28 - 24) + 24px);
         padding-right: 10px;
     }
+
+    /* Athlets Block */
+
+    .athlets-title {
+        margin-top: 25px;
+        margin-bottom: 19px;
+
+        font-size: 50px;
+        
+        text-transform: uppercase;
+        color: #e7e7e7;
+    }
+
+    .footballer-pic {
+        margin-left: 50px;
+    }
+
+    .text-block {
+        width: 100vw;
+    }
+
+    .ford-white {
+        margin-top: -19%;
+        
+        background-color: #fafafa;
+    }
+
+    .numeration {
+        margin-top: 83px;
+
+        color: #000;
+    } 
 
 }
