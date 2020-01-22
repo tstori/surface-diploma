@@ -71,7 +71,7 @@ button {
  /* Top Container */
 
 .page-cover {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 
@@ -121,17 +121,10 @@ button {
 }
 
 .section-home {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-
-    height: auto!important;
     min-height: 90vh;
     padding-top: 8.5rem;
     padding-bottom: 5.25rem;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 /* Homepage Text */
@@ -208,6 +201,8 @@ button {
 /* Athlets Block */
 
 .athlets-container {
+    position: relative;
+
     background-color: #fff;
 }
 
@@ -219,5 +214,6 @@ button {
     
     text-transform: uppercase;
     color: #e7e7e7;
+}
 
 }
