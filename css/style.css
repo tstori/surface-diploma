@@ -49,7 +49,20 @@ button {
 
 @media (max-width: 640px) {
 
+.page-margins {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* Header Logo */
+
+.page-header {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+}
 
 .white-logo {
     fill: #fff;
@@ -101,7 +114,7 @@ button {
     background-color: rgba(24, 25, 65, 0.93);
 }
 
-.page-cover .bg-color {
+.bg-color {
     position: absolute;
     top: 0;
     left: 0;
@@ -198,22 +211,196 @@ button {
     padding-right: 10px;
 }
 
-/* Athlets Block */
+/* Page Block's */
 
-.athlets-container {
-    position: relative;
+.block-title {
+    margin-top: 0.43rem;
+    margin-bottom: 0.5rem;
 
-    background-color: #fff;
-}
-
-.athlets-title {
-    margin-top: 1.56rem;
-    margin-bottom: 19px;
-
-    font-size: 50px;
+    font-size: 3.125rem;
     
     text-transform: uppercase;
     color: #e7e7e7;
+}
+
+/* Img Content */
+
+.footballer-pic {
+    margin-left: 2.75rem;
+}
+
+.basketballer-pic {
+    padding-left: 0.625rem;
+}
+
+/* Color Blok's*/
+
+.ford-white-block {
+    margin-top: -3.75rem;
+
+    background-color: #fafafa;
+}
+
+.players-block .ford-white-block {
+    margin-top: -1.8rem;
+}
+
+.light-grayish-blue-block {
+    background-color: #f5f4f9;
+}
+
+.dark-moderate-violet {
+    background-color: #5e42b0;
+}
+
+.very-dark-blue-block {
+    background-color: #090c35;
+}
+
+/* Numbered blocks */
+
+.block-header {
+    margin: 0;
+    padding-top: 3.75rem;
+    padding-left: 0;
+    padding-bottom: 1.68rem;
+}
+
+.ford-white-block > .block-header{
+    padding-top: 5.18rem;
+}
+
+.block-header > table {
+    border-collapse: collapse;
+}
+
+.block-num {
+    padding-right: 0.5rem;
+
+    font-size: 0.87rem;
+    font-weight: 800;
+
+    color: #000;
+}
+
+.block-num::after {
+    content: '';
+
+    display: block;
+
+    width: 0.93rem;
+    height: 0.25rem;
+
+    background-color: #5e42b0;
+}
+
+.dark-moderate-violet .block-num:after {
+    background-color: #fff;
+}
+
+.very-dark-blue-block .block-num {
+    color: #8765dd;
+}
+
+.very-dark-blue-block .block-num:after {
+    background-color: #fff;
+}
+
+.block-caption {
+    font-size: 1.43rem;
+    font-weight: 800;
+
+    color: #c1c1c1;
+    text-transform: uppercase;
+}
+
+.block-content {
+    padding-bottom: 4rem;
+
+    font-size: 0.93rem;
+    font-weight: 500;
+
+    color: #000;
+}
+
+.dark-moderate-violet .block-content {
+    color: #fff;
+}
+
+.very-dark-blue-block .block-content {
+    color: #fff;
+}
+
+/* Blocks with Square */
+
+.main-image {
+    height: 21.93rem;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.be-active-container .main-image {
+    background-image: url(../images/be-active_640.jpg);
+}
+
+.find-contact-block .main-image {
+    background-image: url(../images/find-contact_640.jpg);
+}
+
+.work-it-container .main-image {
+    background-image: url(../images/work-it_640.jpg);
+} 
+
+.number-in-square {
+    padding: 1.68rem;
+
+    font-size: 0.875rem;
+    font-weight: 800;
+
+    background-color: #5e42b0;
+}
+
+.number-in-square::after {
+    content: '';
+
+    display: block;
+
+    width: 0.96rem;
+    height: 0.25rem;
+
+    background-color: #8f7bc8;
+    border-radius: 0.2rem;
+}
+
+.article-number {
+    position: absolute;
+
+    margin-left: 1.25rem;
+    margin-top: -3.625rem;
+
+    border-collapse: collapse;
+}
+
+.smaller-block-title {
+    margin-top: 1.71rem;
+    margin-bottom: 1rem;
+
+    font-size: 1.75rem;
+    text-transform: uppercase;
+
+    color: #e7e7e7;
+}
+
+.colorless-block .block-content {
+    font-size: 1rem;
+}
+
+/* Footer Style */
+
+.page-footer {
+    background-image: url(../images/game_767.jpg);
 }
 
 }
