@@ -124,9 +124,13 @@ button {
 
     .section-home {
         min-height: 90vh;
-        padding-top: 8.5rem;
+        padding-top: 8rem;
         padding-bottom: 5.25rem;
         box-sizing: border-box;
+    }
+
+    .home-text {
+        position: relative;
     }
 
     /* Homepage Text */
@@ -147,7 +151,7 @@ button {
 
     .home-description {
         padding-left: 2.75rem;
-        padding-bottom: 5.56rem;
+        padding-bottom: 5rem;
     }
 
     /* Homepage Button */
@@ -172,13 +176,23 @@ button {
         margin-bottom: 0;
     }
 
+    .button-text-center {
+        display: flex;
+    }
+
     .button-content {
         display: flex;
         align-items: center;
-        
-        margin-left: 28%;    
+        justify-content: center; 
+
+        margin: 0 auto;
 
         text-align: left;
+    }
+
+    .google {
+        width: 96%;
+        margin-left: 0%;
     }
 
     .topic-text, .description-text {
@@ -199,7 +213,6 @@ button {
         width: calc( (100vw - 320px)/(640 - 320) * (28 - 24) + 24px);
         padding-right: 10px;
     }
-
     /* Page Block's */
 
     .block-title {
@@ -214,12 +227,10 @@ button {
 
     /* Img Content */
 
-    .footballer-pic {
-        margin-left: 2.75rem;
-    }
+    .athlete-pic {
+        display: flex;
+        margin: 0 auto;
 
-    .basketballer-pic {
-        padding-left: 0.625rem;
     }
 
     /* Color Blok's*/
@@ -430,6 +441,14 @@ button {
     .footer-content {
         position: relative;
         padding-bottom: 0.625rem;
+        width: 100%;
+    }
+
+    .footer-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .footer-title {
@@ -452,6 +471,10 @@ button {
         text-transform: uppercase;
 
         color: #9b8ec1;
+    }
+
+    .page-footer .logo svg {
+        margin-top: 4.625rem;
     }
 
 }
