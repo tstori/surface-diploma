@@ -1,0 +1,70 @@
+/* Desctop Screen version
+   for max-width devise 1920px
+*/
+
+@media (min-width: 961px) and (max-width: 1920px) {
+
+    /* Main Styles */
+
+    .page-margins {
+        padding-left: 182px;
+        padding-right: 182px;
+    }
+
+    /* Homepage */
+
+    .bg-img {
+        background-image: url(../images/football_1920.jpg);
+    }
+
+     /* Header Logo */
+
+     .logo svg {
+        height: 3.25rem;
+    }
+
+    /* Top Container */
+
+    .section-home {
+        padding-top: 18rem;
+        padding-bottom: 6.8rem;
+    }
+
+    /* Homepage Text */
+
+    .home-title, .home-description {
+        font-size: 5.625rem;
+    }   
+
+    .home-title {
+        padding-left: 0.75rem;
+    }
+
+    .home-description {
+        padding-left: 28rem;
+        padding-bottom: 13.75rem;
+    }
+
+    /* Homepage Button */
+
+    .download-buttons {
+        display: flex;
+    }
+
+    .link-store-btn {
+        height: 77px;
+        margin-right: 3.125rem;
+
+        border-radius: 50px;
+    }
+
+    .link-store-btn:last-child {
+        margin-right: 0;
+    }
+
+    .social-logo-btn {
+        width: calc( (100vw - 961px)/(1920 - 961) * (56 - 50) + 50px);
+        padding-right: 1.75rem;
+    }
+
+}

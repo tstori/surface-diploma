@@ -1,0 +1,240 @@
+/* Mobile version
+   for max-width devise 640px
+*/
+
+@media (max-width: 640px) {
+
+    .page-margins {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Header Logo */
+
+    .logo svg {
+        height: 2.25rem;
+    }
+
+    /* Top Container */
+
+    .page-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Background Cover */
+
+    .bg-img {
+        background-image: url(../images/football_767.jpg);
+    }
+
+    /* First Container */
+
+    .section-home {
+        padding-top: 8rem;
+        padding-bottom: 5.25rem;
+    }
+
+    /* Homepage Text */
+
+    .home-title, .home-description {
+        font-size: 1.75rem;
+    }
+
+    .home-description {
+        padding-left: 2.75rem;
+        padding-bottom: 5rem;
+    }
+
+    /* Homepage Button */
+
+    .link-store-btn {
+        height: 36px;
+        margin-bottom: 14px;
+
+        border-radius: 20px;
+    }
+
+    .link-store-btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .google {
+        width: 93%;
+        margin-left: 0%;
+    }
+
+    .topic-text, .description-text {
+        font-size: calc( (100vw - 320px)/(640 - 320) * (12 - 8) + 8px);
+    }
+
+    .social-logo-btn {
+        width: calc( (100vw - 320px)/(640 - 320) * (28 - 24) + 24px);
+        padding-right: 10px;
+    }
+
+    /* Page Block's */
+
+    .block-title {
+        margin-top: 0.43rem;
+        margin-bottom: 0.5rem;
+
+        font-size: 3.125rem;
+
+        order: -1;
+    }
+
+    /* Img Content */
+
+    .athlete-preview {
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    /* Color Blok's*/
+
+    .ford-white-block {
+        margin-top: -3.5rem;
+
+        background-color: #fafafa;
+    }
+
+    .basketballer-block .ford-white-block {
+        margin-top: -1.5rem;
+    }
+
+    /* Numbered blocks */
+
+    .block-header {
+        margin: 0;
+        padding-top: 3.75rem;
+        padding-left: 0;
+        padding-bottom: 1.68rem;
+    }
+
+    .ford-white-block > .block-header{
+        padding-top: 5.18rem;
+    }
+
+    .block-num {
+        padding-right: 0.5rem;
+
+        font-size: 0.87rem;
+    }
+
+    .block-num::after {
+        width: 0.93rem;
+        height: 0.25rem;
+
+        border-radius: 3px;
+    }
+
+    .block-caption {
+        font-size: 1.43rem;
+    }
+
+    .block-content {
+        padding-bottom: 4rem;
+
+        font-size: 0.93rem;
+    }
+
+    /* Blocks with Square */
+
+    .main-image {
+        height: 21.93rem;
+    }
+
+    .be-active-container .main-image {
+        background-image: url(../images/be-active_640.jpg);
+    }
+
+    .find-contact-block .main-image {
+        background-image: url(../images/find-contact_640.jpg);
+    }
+
+    .work-it-container .main-image {
+        background-image: url(../images/work-it_640.jpg);
+    } 
+
+    .number-in-square {
+        padding: 1.68rem;
+
+        font-size: 0.875rem;
+    }
+
+    .number-in-square::after {
+        width: 0.96rem;
+        height: 0.25rem;
+    }
+
+    .article-number {
+        margin-left: 1.25rem;
+        margin-top: -3.625rem;
+    }
+
+    .smaller-block-title {
+        margin-top: 1.71rem;
+        margin-bottom: 1rem;
+
+        font-size: 1.75rem;
+    }
+
+    .colorless-block .block-content {
+        font-size: 1rem;
+    }
+
+    /* Footer Style */
+
+    .footer-bg {
+        background-image: url(../images/game_767.jpg);
+    }
+
+    .logo-in-square {
+        width: 4.625rem;
+        height: 4.625rem;
+        margin-top: 6rem;
+        margin-bottom: 3.1rem;
+
+        border-radius: 0.625rem;
+    }
+
+    .logo-button {
+        width: 3.75rem;
+        height: 3.125rem;
+    }
+
+    footer .logo svg {
+    margin-top: 5rem;
+    }
+
+    footer .start-end-page .bg-color {
+        left: unset;
+        top: unset;
+    }
+
+    .footer-content {
+        position: relative;
+        padding-bottom: 0.625rem;
+    }
+
+    .footer-title {
+        font-size: 2rem;
+    }
+
+    .footer-description {
+        padding-bottom: 4.75rem;
+
+        font-size: 0.875rem;
+    }
+
+    footer .start-end-page .logo svg {
+        margin-top: 4.625rem;
+    }
+
+}

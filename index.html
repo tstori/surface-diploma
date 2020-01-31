@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Дипломная работа по курсу: "Адаптивная и мобильная вёрстка"</title>
-    <link rel="stylesheet" href="./css/style.css">
+<!-- Responsive css 
+     Main Style -->
+    <link rel="stylesheet" href="./css/common-style.css">
+    <!-- Mobile Style -->
+    <link rel="stylesheet" href="./css/mobile-style.css">
+    <!-- Middle Screen Style -->
+    <link rel="stylesheet" href="./css/middle-screen.css">
+    <!-- Desktop Style -->
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 
 <body>
 <!--- Start Homepage -->
-<header class="page-header bg-img">
+<header class="start-end-page bg-img page-margins">
 <!-- Start Cover -->
     <div class="bg-color"></div>
 <!-- End Cover -->
@@ -70,8 +78,16 @@
 <main class="page-main">
     <!-- Start Athlets Block -->  
     <div class="athlets-container">
+        <picture class="athlete-preview">
+            <source
+              media="(max-width: 640px)"
+              srcset="./images/footballer_192.png" >
+            <source 
+              media="(min-width: 641px) and (max-width: 960px)"
+              srcset="./images/footballer_497.png" >
+            <img class="athlete-pic" src="./images/footballer_497.png" alt="Footballer player">
+        </picture>
         <h2 class="block-title page-margins">Athlets</h2>
-        <img class="athlete-pic page-margins" src="./images/footballer_192.png" alt="Footballer player">
         <section class="ford-white-block page-margins">
                 <div class="block-header">
                     <table>
@@ -112,52 +128,60 @@
                 </article>
         </section>
     </div>
-    <!-- End Athlets Block -->
-    <!-- Start Players Block -->
-    <div class="players-block">
+    <!-- End Athlets Block 
+         Start Basketballer Block -->
+    <div class="athlets-container basketballer-block">
+        <picture class="athlete-preview">
+            <source
+              media="(max-width: 640px)"
+              srcset="./images/basketballer_302.png" >
+            <source 
+              media="(min-width: 641px) and (max-width: 960px)"
+              srcset="./images/basketballer_436.png" >
+            <img class="athlete-pic" src="./images/basketballer_436.png" alt="Footballer player">
+        </picture>
         <h2 class="block-title page-margins">Players</h2>
-        <img class="athlete-pic" src="./images/basketballer_302.png" alt="Basketballer player">
         <section class="ford-white-block page-margins">
-            <div class="block-header">
-                <table>
-                    <tr>
-                        <td class="block-num">01</td>
-                        <td class="block-caption">Connection</td>
-                    </tr>
-                </table>
-            </div>
-            <article class="block-content">
-                Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
-            </article>
+                <div class="block-header">
+                    <table>
+                        <tr>
+                            <td class="block-num">01</td>
+                            <td class="block-caption">Connection</td>
+                        </tr>
+                    </table>
+                </div>
+                <article class="block-content">
+                    Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.
+                </article>
         </section>
         <section class="light-grayish-blue-block page-margins">
-            <div class="block-header">
-                <table>
-                    <tr>
-                        <td class="block-num">02</td>
-                        <td class="block-caption">Collaboration</td>
-                    </tr>
-                </table>
-            </div>
-            <article class="block-content">
-                Work with recruiter to increase your chances of findingtalented athlete.
-            </article>
+                <div class="block-header">
+                    <table>
+                        <tr>
+                            <td class="block-num">02</td>
+                            <td class="block-caption">Collaboration</td>
+                        </tr>
+                    </table>
+                </div>
+                <article class="block-content">
+                    Work with recruiter to increase your chances of findingtalented athlete.
+                </article>
         </section>
         <section class="very-dark-blue-block page-margins">
-            <div class="block-header">
-                <table>
-                    <tr>
-                        <td class="block-num">03</td>
-                        <td class="block-caption">Growth</td>
-                    </tr>
-                </table>
-            </div>
-            <article class="block-content">
-                Save your time, recruit proper athlets for your team. 
-            </article>
+                <div class="block-header">
+                    <table>
+                        <tr>
+                            <td class="block-num">03</td>
+                            <td class="block-caption">Growth</td>
+                        </tr>
+                    </table>
+                </div>
+                <article class="block-content">
+                    Save your time, recruit proper athlets for your team. 
+                </article>
         </section>
     </div>  
-    <!-- End Players Block -->
+    <!-- End Basketballer Block -->
     <!-- Start Be Active Block -->
     <div class="be-active-container">
         <section class="main-image"></section>
@@ -169,7 +193,7 @@
         <h3 class="smaller-block-title page-margins">Be active</h3>
         <section class="colorless-block page-margins">
             <article class="block-content">
-                Post videos with your skills,<br>Like and follow others to be<br> more popular.
+                Post videos with your skills, Like and follow others to be more popular.
             </article>
         </section>
     </div>
@@ -185,7 +209,7 @@
         <h3 class="smaller-block-title page-margins">Find Contact</h3>
         <section class="colorless-block page-margins">
             <article class="block-content">
-                Contact others to find right coach<br>or athlete you are looking for. 
+                Contact others to find right coach or athlete you are looking for. 
             </article>
         </section>
     </div>
@@ -209,7 +233,7 @@
 </main>
 <!-- End Main Content -->
 <!-- Start Footer -->
-<footer class="page-footer footer-bg bg-img page-margins">
+<footer class="start-end-page footer-bg bg-img page-margins">
     <!-- Start Cover -->
     <div class="bg-color"></div>
     <!-- End Cover -->
