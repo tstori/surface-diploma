@@ -1,0 +1,270 @@
+/* Fonts
+   -- Regular 
+*/
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -- Bold */
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold.woff') format('woff'),
+         url('../fonts/OpenSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* Global Styles*/
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+	font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: normal;
+    
+	color: #fff;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* Page Block's */ 
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-left-container, .img-right-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-right-container {
+    flex-direction: row-reverse;
+}
+
+.img-and-square-left {
+    display: flex;
+    align-items: center;
+}
+
+.img-and-square-right {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+/* Typography */
+
+.block-title {
+    text-transform: uppercase;
+    color: #e7e7e7;
+}
+
+.colorless-content {
+    font-weight: 500;
+
+    color: #000;
+}
+
+/* Numbering Style */
+
+.block-num {
+    font-weight: 800;
+
+    color: #000;
+}
+
+.block-num::after {
+    content: '';
+
+    display: block;
+
+    background-color: #5e42b0;
+}
+
+.block-header > table {
+    border-collapse: collapse;
+}
+
+/* Color Block's */
+
+.light-grayish-blue-block {
+    background-color: #f5f4f9;
+}
+
+.dark-moderate-violet {
+    background-color: #5e42b0;
+}
+
+.dark-moderate-violet .block-num:after {
+    background-color: #fff;
+}
+
+.dark-moderate-violet .color-block-content {
+    color: #fff;
+}
+
+.very-dark-blue-block {
+    background-color: #090c35;
+}
+
+.very-dark-blue-block .block-num {
+    color: #8765dd;
+}
+
+.very-dark-blue-block .block-num:after {
+    background-color: #fff;
+}
+
+.dark-moderate-violet .color-block-content {
+    color: #fff;
+}
+
+.very-dark-blue-block .color-block-content {
+    color: #fff;
+}
+
+/* Images Styles */
+
+.white-logo {
+    fill: #fff;
+}
+
+.bg-img {
+    background-image: url(../images/football_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.athlete-preview {
+    position: absolute;
+
+    text-align: right;
+}
+
+/* Homepage Style */
+
+header.page-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.page-cover::before {
+    content: '';
+
+    position: absolute;
+
+    width: 100%;
+    height: inherit;
+
+    background-color: rgba(24, 25, 65, 0.93);
+}
+
+.homepage-content {
+    z-index: 2;
+
+    text-transform: uppercase;
+}
+
+/* Logotype */
+
+.company-logo {
+    flex-grow: 1;
+
+    text-align: center;
+}
+
+ /* Download Button */
+
+ .link-store-btn {
+    position: relative;
+
+    width: 100%;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #5e42b0;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+.social-logo-btn {
+    fill: #fff;
+
+    float: left;
+}
+
+.topic-text, .description-text {
+    margin: 0;
+}
+
+.topic-text {
+    font-weight: normal;
+}
+
+/* Content Styles */
+
+.block-caption {
+    font-weight: 800;
+
+    color: #c1c1c1;
+    text-transform: uppercase;
+}
+
+.color-block-content {
+    font-weight: 500;
+
+    color: #000;
+}
+
+/* Athlets Block */
+
+.athlets-content {
+    width: 100%;
+}
+
+/* Blocks With Squares */
+
+.number-in-square {
+    font-weight: 800;
+
+    background-color: #5e42b0;
+}
+
+.number-in-square::after {
+    content: '';
+
+    display: block;
+
+    background-color: #8f7bc8;
+}

@@ -4,67 +4,210 @@
 
 @media (min-width: 961px) and (max-width: 1920px) {
 
-    /* Main Styles */
+/* Page Block's */
 
-    .page-margins {
-        padding-left: 182px;
-        padding-right: 182px;
-    }
+header.page-cover {
+    height: 960px;
+}
 
-    /* Homepage */
+.block-content {
+    margin: 0px 10% 0 52%;
+    padding-left: 3rem;
+}
 
-    .bg-img {
-        background-image: url(../images/football_1920.jpg);
-    }
+.img-right-container .block-content {
+    margin: 0 43% 0 17%;
+}
 
-     /* Header Logo */
+.img-left-container, .img-right-container {
+    margin-top: 1.5rem;
+}
 
-     .logo svg {
-        height: 3.25rem;
-    }
+/* Numbering Style */
 
-    /* Top Container */
+.block-num {
+    font-size: 1.125rem;
+}
 
-    .section-home {
-        padding-top: 18rem;
-        padding-bottom: 6.8rem;
-    }
+.block-num::after {
+    width: 1.18rem;
+    height: 0.31rem;
 
-    /* Homepage Text */
+    border-radius: 3px;
+}
 
-    .home-title, .home-description {
-        font-size: 5.625rem;
-    }   
+/* Typography */
 
-    .home-title {
-        padding-left: 0.75rem;
-    }
+.block-title {
+    padding-top: 5rem;
+    font-size: 5rem;
+}
 
-    .home-description {
-        padding-left: 28rem;
-        padding-bottom: 13.75rem;
-    }
+.img-and-square-content .block-title, .colorless-content {
+    margin-left: 2.75rem;
+    margin-right: 26%;
+}
 
-    /* Homepage Button */
+.colorless-content {
+    font-size: 1.5rem;
+}
 
-    .download-buttons {
-        display: flex;
-    }
+/* Images */
 
-    .link-store-btn {
-        height: 77px;
-        margin-right: 3.125rem;
+.white-logo {
+    width: 12rem;
+}
 
-        border-radius: 50px;
-    }
+.athlete-preview {
+    width: 50%;
 
-    .link-store-btn:last-child {
-        margin-right: 0;
-    }
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
 
-    .social-logo-btn {
-        width: calc( (100vw - 961px)/(1920 - 961) * (56 - 50) + 50px);
-        padding-right: 1.75rem;
-    }
+.rugby {
+    width: 566px;
+    height: 908px;
+
+    background-image: url(../images/footballer_566.png);
+}
+
+.basketballer {
+    width: 991px;
+    height: 815px;
+
+    background-image: url(../images/basketballer_991.png);
+}
+
+.img-right-container .athlete-preview {
+    width: 55%;
+}
+
+/* Logotype */
+
+.company-logo {
+    padding-top: 2.8rem;
+}
+
+/* Homepage Text */
+
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 82%;
+    height: inherit;
+}
+
+.homepage-header {
+    flex-grow: 1;
+}
+
+.home-title, .home-description {
+    margin: 0;
+
+    font-size: 5.625rem;
+}   
+
+.home-description {
+    padding-left: 27%;
+}
+
+/* Download Button */
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.link-store-btn {
+    width: 19.5rem;
+    height: 77px;
+    margin-right: 3.125rem;
+
+    border-radius: 50px;
+}
+
+.link-store-btn:last-child {
+    margin-right: 0;
+}
+
+.social-logo-btn {
+    width: calc( (100vw - 961px)/(1920 - 961) * (56 - 50) + 50px);
+    padding-right: 1.75rem;
+}
+
+.topic-text, .description-text {
+    font-size: 14px;
+}
+
+/* Content Styles */
+
+.block-header {
+    padding-top: 3.1rem;
+    padding-bottom: 1.5rem;
+}
+
+.ford-white-block > .block-header{
+    padding-top: 5.18rem;
+}
+
+.block-caption {
+    padding-left: 0.75rem;
+
+    font-size: 2.25rem;
+}
+
+.color-block-content {
+    padding-bottom: 2.9rem;
+
+    font-size: 1.25rem;
+}
+
+.img-right-container .color-block-content {
+    padding-bottom: 3.5rem;
+}
+
+/* Block's With Squares */
+
+.athlete-side-pic {
+    width: 50%;
+    height: 730px;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.runner {
+    background-image: url(../images/be-active_960.jpg);
+}
+
+.trainer {
+    background-image: url(../images/find-contact_960.jpg);
+}
+
+.article-number {
+    margin-left: -4%;
+}
+
+.img-and-square-right .article-number {
+    margin-right: -4%;
+}
+
+.number-in-square {
+    padding: 3.75rem 4rem;
+
+    font-size: 1.5rem;
+}
+
+.number-in-square::after {
+    height: 5px;
+    border-radius: 0.2rem;
+}
 
 }
