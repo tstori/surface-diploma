@@ -12,7 +12,6 @@ header.page-cover {
 
 .block-content {
     margin: 0px 10% 0 52%;
-    padding-left: 3rem;
 }
 
 .img-right-container .block-content {
@@ -74,10 +73,12 @@ header.page-cover {
 }
 
 .basketballer {
-    width: 991px;
     height: 815px;
+    margin-top: -1.6rem;
 
     background-image: url(../images/basketballer_991.png);
+    background-size: contain;
+    background-position: left center;
 }
 
 .img-right-container .athlete-preview {

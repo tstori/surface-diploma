@@ -57,6 +57,7 @@ button {
 
 .img-right-container {
     flex-direction: row-reverse;
+    align-content: center;
 }
 
 .img-and-square-left {
