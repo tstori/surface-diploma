@@ -156,7 +156,7 @@ button {
 }
 
 .athlete-preview {
-    position: absolute;
+    z-index: 1;
 
     text-align: right;
 }
@@ -251,6 +251,8 @@ header.page-cover::before {
 /* Athlets Block */
 
 .athlets-content {
+    position: absolute;
+    
     width: 100%;
 }
 

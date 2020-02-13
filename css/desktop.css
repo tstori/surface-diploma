@@ -11,11 +11,15 @@ header.page-cover {
 }
 
 .block-content {
-    margin: 0px 10% 0 52%;
+    margin: 0px 9% 0 50%;
+}
+
+.img-right-container {
+    margin-top: 0;
 }
 
 .img-right-container .block-content {
-    margin: 0 43% 0 17%;
+    margin-left: 9%;
 }
 
 .img-left-container, .img-right-container {
@@ -33,6 +37,12 @@ header.page-cover {
     height: 0.31rem;
 
     border-radius: 3px;
+}
+
+/* Color Block's */
+
+.ford-white-block, .light-grayish-blue-block,  .dark-moderate-violet {
+    max-height: 15rem;
 }
 
 /* Typography */
@@ -58,15 +68,13 @@ header.page-cover {
 }
 
 .athlete-preview {
-    width: 50%;
+    width: 55%;
 
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
 }
 
 .rugby {
-    width: 566px;
     height: 908px;
 
     background-image: url(../images/footballer_566.png);
@@ -74,15 +82,10 @@ header.page-cover {
 
 .basketballer {
     height: 815px;
-    margin-top: -1.6rem;
+    margin-top: -3.2rem;
 
     background-image: url(../images/basketballer_991.png);
-    background-size: contain;
     background-position: left center;
-}
-
-.img-right-container .athlete-preview {
-    width: 55%;
 }
 
 /* Logotype */
