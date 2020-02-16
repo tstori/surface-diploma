@@ -60,15 +60,14 @@ button {
     align-content: center;
 }
 
-.img-and-square-left {
+.img-and-square-left, .img-and-square-right {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .img-and-square-right {
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
 }
 
 /* Typography */
@@ -149,10 +148,17 @@ button {
 }
 
 .bg-img {
-    background-image: url(../images/football_1920.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+}
+
+header.bg-img {
+    background-image: url(../images/football_1920.jpg);
+}
+
+footer.bg-img {
+    background-image: url(../images/game_1920.jpg);
 }
 
 .athlete-preview {
@@ -163,13 +169,13 @@ button {
 
 /* Homepage Style */
 
-header.page-cover {
+.page-cover {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header.page-cover::before {
+.page-cover::before {
     content: '';
 
     position: absolute;
