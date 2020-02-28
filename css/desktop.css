@@ -2,9 +2,6 @@
    for max-width devise 1920px
 */
 
-<<<<<<< HEAD
-@media (min-width: 961px) and (max-width: 1920px) { 
-=======
 @media (min-width: 961px) and (max-width: 1920px) {
 
 /* Page Block's */
@@ -146,7 +143,6 @@
 .home-description {
     padding-left: 27%;
 }
->>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 
 /* Download Button */
 
@@ -251,11 +247,7 @@
     align-items: flex-end;
     z-index: 2;
 
-<<<<<<< HEAD
-    margin-top: 11.5%;
-=======
     margin-top: 11.9%;
->>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 }
 
 /* Logo Footer */

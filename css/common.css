@@ -66,14 +66,6 @@ button {
     margin-top: 2.5rem;
 }
 
-<<<<<<< HEAD
-.img-right-container .block-content {
-    margin: 0 54% 0 10%;
-    padding-top: 1rem;
-}
-
-=======
->>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 .img-and-square-left, .img-and-square-right {
     display: flex;
     align-items: center;
@@ -194,27 +186,6 @@ button {
     background-size: cover;
 }
 
-<<<<<<< HEAD
-.rugby {
-    width: 60%;
-    height: 908px;
-    margin-top: 9px;
-    margin-left: calc( (100vw - 961px)/(1920 - 961) * 96 - 96.5px);
-
-    background-image: url(../images/footballer_566.png);
-}
-
-.basketballer {
-    height: 815px;
-    margin-top: -3.8rem;
-    padding-right: calc( (100vw - 961px)/(1920 - 961) * 127);
-
-    background-image: url(../images/basketballer_991.png);
-    background-position: left center;
-}
-
-=======
->>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 header.bg-img {
     background-image: url(../images/football_1920.jpg);
 }
