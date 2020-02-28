@@ -2,7 +2,151 @@
    for max-width devise 1920px
 */
 
+<<<<<<< HEAD
 @media (min-width: 961px) and (max-width: 1920px) { 
+=======
+@media (min-width: 961px) and (max-width: 1920px) {
+
+/* Page Block's */
+
+.page-cover {
+    height: 960px;
+}
+
+.block-content {
+    margin: 0px 16% 0 50%;
+}
+
+.img-left-container {
+    margin-top: 1.5rem;
+}
+
+.img-right-container {
+    margin-top: 2.5rem;
+}
+
+.img-right-container .block-content {
+    margin: 0 54% 0 10%;
+    padding-top: 1rem;
+}
+
+/* Numbering Style */
+
+.block-num {
+    font-size: 1.125rem;
+}
+
+.block-num::after {
+    width: 1.18rem;
+    height: 0.31rem;
+
+    border-radius: 3px;
+}
+
+/* Color Block's */
+
+.ford-white-block {
+    height: 12.7rem;
+}
+
+.img-right-container .ford-white-block {
+    height: 15rem;
+}
+
+.light-grayish-blue-block {
+    height: 15.3rem;
+}
+
+.dark-moderate-violet {
+    height: 14.7rem;
+}
+
+/* Typography */
+
+.block-title {
+    padding-top: 5rem;
+    font-size: 5rem;
+}
+
+.img-right-container .block-title {
+    padding-top: 0;
+}
+
+.img-and-square-content .block-title, .colorless-content {
+    margin-top: 0;
+    margin-left: 8rem;
+    margin-right: 23%;
+    padding-top: 0;
+
+    font-size: calc( (100vw - 961px)/(1920 - 961) * 30 + 50px);
+}
+
+.colorless-content {
+    font-size: calc( (100vw - 961px)/(1920 - 961) * 4 + 20px);
+}
+
+/* Images */
+
+.white-logo {
+    width: 12rem;
+}
+
+.athlete-preview {
+    width: 55%;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.rugby {
+    width: 60%;
+    height: 908px;
+    margin-top: 9px;
+    margin-left: calc( (100vw - 961px)/(1920 - 961) * 96 - 96.5px);
+
+    background-image: url(../images/footballer_566.png);
+}
+
+.basketballer {
+    height: 815px;
+    margin-top: -3.8rem;
+    padding-right: calc( (100vw - 961px)/(1920 - 961) * 127);
+
+    background-image: url(../images/basketballer_991.png);
+    background-position: left center;
+}
+
+/* Logotype */
+
+.company-logo {
+    padding-top: 2.8rem;
+}
+
+/* Homepage Text */
+
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 82%;
+    height: inherit;
+}
+
+.homepage-header {
+    flex-grow: 1;
+}
+
+.home-title, .home-description {
+    margin: 0;
+
+    font-size: 5.625rem;
+}   
+
+.home-description {
+    padding-left: 27%;
+}
+>>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 
 /* Download Button */
 
@@ -107,7 +251,11 @@
     align-items: flex-end;
     z-index: 2;
 
+<<<<<<< HEAD
     margin-top: 11.5%;
+=======
+    margin-top: 11.9%;
+>>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 }
 
 /* Logo Footer */

@@ -66,11 +66,14 @@ button {
     margin-top: 2.5rem;
 }
 
+<<<<<<< HEAD
 .img-right-container .block-content {
     margin: 0 54% 0 10%;
     padding-top: 1rem;
 }
 
+=======
+>>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 .img-and-square-left, .img-and-square-right {
     display: flex;
     align-items: center;
@@ -191,6 +194,7 @@ button {
     background-size: cover;
 }
 
+<<<<<<< HEAD
 .rugby {
     width: 60%;
     height: 908px;
@@ -209,6 +213,8 @@ button {
     background-position: left center;
 }
 
+=======
+>>>>>>> a150d121f1ba26155613375e75326aa21ccd3067
 header.bg-img {
     background-image: url(../images/football_1920.jpg);
 }
