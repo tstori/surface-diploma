@@ -2,152 +2,9 @@
    for max-width devise 1920px
 */
 
-@media (min-width: 961px) and (max-width: 1920px) {
-
-/* Page Block's */
-
-header.page-cover {
-    height: 960px;
-}
-
-.block-content {
-    margin: 0px 16% 0 50%;
-}
-
-.img-left-container {
-    margin-top: 1.5rem;
-}
-
-.img-right-container {
-    margin-top: 2.5rem;
-}
-
-.img-right-container .block-content {
-    margin: 0 54% 0 10%;
-    padding-top: 1rem;
-}
-
-/* Numbering Style */
-
-.block-num {
-    font-size: 1.125rem;
-}
-
-.block-num::after {
-    width: 1.18rem;
-    height: 0.31rem;
-
-    border-radius: 3px;
-}
-
-/* Color Block's */
-
-.ford-white-block {
-    height: 12.7rem;
-}
-
-.img-right-container .ford-white-block {
-    height: 15rem;
-}
-
-.light-grayish-blue-block {
-    height: 15.3rem;
-}
-
-.dark-moderate-violet {
-    height: 14.7rem;
-}
-
-/* Typography */
-
-.block-title {
-    padding-top: 5rem;
-    font-size: 5rem;
-}
-
-.img-right-container .block-title {
-    padding-top: 0;
-}
-
-.img-and-square-content .block-title, .colorless-content {
-    margin-left: 2.75rem;
-    margin-right: 26%;
-}
-
-.colorless-content {
-    font-size: 1.5rem;
-}
-
-/* Images */
-
-.white-logo {
-    width: 12rem;
-}
-
-.athlete-preview {
-    width: 55%;
-
-    background-repeat: no-repeat;
-    background-position: top center;
-}
-
-.rugby {
-    width: 60%;
-    height: 908px;
-    margin-top: 9px;
-    margin-left: calc( (100vw - 961px)/(1920 - 961) * 96 - 96.5px);
-
-    background-image: url(../images/footballer_566.png);
-}
-
-.basketballer {
-    height: 815px;
-    margin-top: -3.8rem;
-    padding-right: calc( (100vw - 961px)/(1920 - 961) * 127);
-
-    background-image: url(../images/basketballer_991.png);
-    background-position: left center;
-}
-
-/* Logotype */
-
-.company-logo {
-    padding-top: 2.8rem;
-}
-
-/* Homepage Text */
-
-.homepage-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    width: 82%;
-    height: inherit;
-}
-
-.homepage-header {
-    flex-grow: 1;
-}
-
-.home-title, .home-description {
-    margin: 0;
-
-    font-size: 5.625rem;
-}   
-
-.home-description {
-    padding-left: 27%;
-}
+@media (min-width: 961px) and (max-width: 1920px) { 
 
 /* Download Button */
-
-.download-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
 
 .link-store-btn {
     width: 19.5rem;
@@ -209,19 +66,27 @@ header.page-cover {
 }
 
 .runner {
-    background-image: url(../images/be-active_960.jpg);
+    background-image: url(../images/be-active_1024.jpg);
 }
 
 .trainer {
-    background-image: url(../images/find-contact_960.jpg);
+    background-image: url(../images/find-contact_1024.jpg);
+}
+
+.club {
+    background-image: url(../images/work-it_1024.jpg);
 }
 
 .article-number {
-    margin-left: -4%;
+    position: absolute;
 }
 
 .img-and-square-right .article-number {
     margin-right: -4%;
+}
+
+.img-and-square-content {
+    width: 50%;
 }
 
 .number-in-square {
@@ -233,6 +98,84 @@ header.page-cover {
 .number-in-square::after {
     height: 5px;
     border-radius: 0.2rem;
+}
+
+/* Footer Style */
+
+.footer-content {
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+
+    margin-top: 11.5%;
+}
+
+/* Logo Footer */
+
+.logo-in-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8.125rem;
+    height: 8.5rem;
+
+    background: linear-gradient(45deg, #52389e, #7554d4);
+    border-radius: 20%;
+}
+
+.company-name {
+    z-index: 2;
+}
+
+.logo-button {
+    fill: #fff;
+
+    width: 6.5rem;
+    height: 5.3rem;
+}
+
+/* Footer Content */
+
+footer.page-cover {
+    justify-content: space-between;
+}
+
+.footer-text {
+    padding-left: 2.1rem;
+
+    text-transform: uppercase;
+}
+
+.footer-title {
+    margin: 0;
+
+    font-size: 5rem;
+    font-weight: 800;
+    
+    color: #fff;
+}
+
+.footer-description {
+    margin: 0;
+
+    font-size: 1.8rem;
+    font-weight: 200;
+
+    color: #a496ca;
+}
+
+footer .download-buttons, footer .company-logo {
+    flex-grow: 0;
+}
+
+footer .company-logo {
+    z-index: 2;
+}
+
+footer .company-logo {
+    padding-top: 0;
+    padding-bottom: 3.125rem;
 }
 
 }
