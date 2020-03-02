@@ -66,6 +66,11 @@ button {
     margin-top: 2.5rem;
 }
 
+.img-right-container .block-content {
+    margin: 0 54% 0 10%;
+    padding-top: 1rem;
+}
+
 .img-and-square-left, .img-and-square-right {
     display: flex;
     align-items: center;
@@ -87,6 +92,13 @@ button {
 }
 
 .img-right-container .block-title {
+    padding-top: 0;
+}
+
+.img-and-square-content .block-title, .colorless-content {
+    margin-top: 0;
+    margin-left: 8rem;
+    margin-right: 23%;
     padding-top: 0;
 }
 
@@ -116,6 +128,15 @@ button {
 
     background-color: #5e42b0;
     border-radius: 3px;
+}
+
+.block-header {
+    padding-top: calc( (100vw - 961px)/(1920 - 961) * 29 + 20px);
+    padding-bottom: calc( (100vw - 961px)/(1920 - 961) * 13 + 11px);
+}
+
+.ford-white-block > .block-header{
+    padding-top: 5.18rem;
 }
 
 .block-header > table {
@@ -205,6 +226,24 @@ footer.bg-img {
     text-align: right;
 }
 
+.rugby {
+    width: 60%;
+    height: 908px;
+    margin-top: 9px;
+    margin-left: calc( (100vw - 961px)/(1920 - 961) * 96 - 96.5px);
+
+    background-image: url(../images/footballer_566.png);
+}
+
+.basketballer {
+    height: 815px;
+    margin-top: -3.8rem;
+    padding-right: calc( (100vw - 961px)/(1920 - 961) * 127);
+
+    background-image: url(../images/basketballer_991.png);
+    background-position: left center;
+}
+
 /* Homepage Style */
 
 .page-cover {
@@ -276,14 +315,21 @@ footer.bg-img {
  .link-store-btn {
     position: relative;
 
-    width: 100%;
+    width: 19.5rem;
+    height: 77px;
+    margin-right: 3.125rem;
 
     text-transform: uppercase;
 
     color: #fff;
     background-color: #5e42b0;
+    border-radius: 50px;
     border-style: none;
     cursor: pointer;
+}
+
+.link-store-btn:last-child {
+    margin-right: 0;
 }
 
 .button-content {
@@ -297,13 +343,18 @@ footer.bg-img {
 }
 
 .social-logo-btn {
-    fill: #fff;
-
     float: left;
+
+    width: calc( (100vw - 961px)/(1920 - 961) * (56 - 50) + 50px);
+    padding-right: 1.75rem;
+
+    fill: #fff;
 }
 
 .topic-text, .description-text {
     margin: 0;
+
+    font-size: 14px;
 }
 
 .topic-text {
@@ -313,6 +364,9 @@ footer.bg-img {
 /* Content Styles */
 
 .block-caption {
+    padding-left: 0.75rem;
+
+    font-size: 2.25rem;
     font-weight: 800;
 
     color: #c1c1c1;
@@ -324,9 +378,16 @@ footer.bg-img {
 }
 
 .color-block-content {
+    padding-bottom: 2.9rem;
+
+    font-size: 1.25rem;
     font-weight: 500;
 
     color: #000;
+}
+
+.img-right-container .color-block-content {
+    padding-bottom: 3.5rem;
 }
 
 /* Athlets Block */
@@ -339,7 +400,43 @@ footer.bg-img {
 
 /* Blocks With Squares */
 
+.athlete-side-pic {
+    width: 50%;
+    height: 730px;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.runner {
+    background-image: url(../images/be-active_1024.jpg);
+}
+
+.trainer {
+    background-image: url(../images/find-contact_1024.jpg);
+}
+
+.club {
+    background-image: url(../images/work-it_1024.jpg);
+}
+
+.article-number {
+    position: absolute;
+}
+
+.img-and-square-right .article-number {
+    margin-right: -4%;
+}
+
+.img-and-square-content {
+    width: 50%;
+}
+
 .number-in-square {
+    padding: 3.75rem 4rem;
+
+    font-size: 1.5rem;
     font-weight: 800;
 
     background-color: #5e42b0;
@@ -350,5 +447,86 @@ footer.bg-img {
 
     display: block;
 
+    height: 5px;
+
     background-color: #8f7bc8;
+    border-radius: 0.2rem;
+}
+
+/* Footer Style */
+
+.footer-content {
+    display: flex;
+    align-items: flex-end;
+    z-index: 2;
+
+    margin-top: 11.9%;
+}
+
+/* Logo Footer */
+
+.logo-in-square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8.125rem;
+    height: 8.5rem;
+
+    background: linear-gradient(45deg, #52389e, #7554d4);
+    border-radius: 20%;
+}
+
+.company-name {
+    z-index: 2;
+}
+
+.logo-button {
+    fill: #fff;
+
+    width: 6.5rem;
+    height: 5.3rem;
+}
+
+/* Footer Content */
+
+footer.page-cover {
+    justify-content: space-between;
+}
+
+.footer-text {
+    padding-left: 2.1rem;
+
+    text-transform: uppercase;
+}
+
+.footer-title {
+    margin: 0;
+
+    font-size: 5rem;
+    font-weight: 800;
+    
+    color: #fff;
+}
+
+.footer-description {
+    margin: 0;
+
+    font-size: 1.8rem;
+    font-weight: 200;
+
+    color: #a496ca;
+}
+
+footer .download-buttons, footer .company-logo {
+    flex-grow: 0;
+}
+
+footer .company-logo {
+    z-index: 2;
+}
+
+footer .company-logo {
+    padding-top: 0;
+    padding-bottom: 3.125rem;
 }
